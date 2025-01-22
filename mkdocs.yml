@@ -1,0 +1,31 @@
+site_name: "Your Project Name"
+site_url: "https://your-username.github.io/your-github-repo/"
+repo_url: "https://github.com/your-username/your-github-repo"
+repo_name: "your-github-repo"
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - toc.follow
+    - search.highlight
+    - content.tabs.link
+nav:
+  - Home: index.md
+  #- Guide: guide.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.extra
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - stylesheets/custom.css
+
+plugins:
+  - search
