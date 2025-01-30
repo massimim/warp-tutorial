@@ -1,3 +1,82 @@
 .md-typeset h1 {
-  color: #2a7ae2;
+    color: #2a7ae2;
+}
+/* Make all headings bolder */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800 !important;
+}
+/* Apply the primary title color to all section titles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--md-primary-fg-color) !important;
+}
+
+.md-sidebar--primary {
+    display: none !important;
+}
+
+.md-header__button.md-logo {
+    display: none !important;
+}
+
+/* Add borders to table */
+.md-typeset table {
+    border-collapse: collapse;
+    border: 2px solid #ccc; /* Outer border color */
+}
+
+/* .md-typeset table th {
+    background-color: #f8f8f8; /* Light gray */
+    color: #333; /* Dark text */
+    font-weight: bold;
+} */
+
+.md-typeset__table {
+    overflow-x: auto;
+    display: block;
+}
+
+.md-typeset table {
+    font-size: 16px;
+    font-weight: bold;
+}
+.md-typeset table td {
+    text-align: left;
+}
+
+.md-typeset table th,
+.md-typeset table td {
+    text-align: center;
+}
+
+/* Add section numbers */
+.md-typeset h1 {
+    counter-reset: h2-counter;
+}
+
+.md-typeset h2 {
+    counter-reset: h3-counter;
+    counter-increment: h2-counter;
+}
+
+.md-typeset h3 {
+    counter-reset: h4-counter;
+    counter-increment: h3-counter;
+}
+
+.md-typeset h2::before {
+    content: counter(h2-counter) ". ";
+}
+
+.md-typeset h3::before {
+    content: counter(h2-counter) "." counter(h3-counter) " ";
 }
