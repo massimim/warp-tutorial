@@ -1,7 +1,7 @@
-site_name: "Your Project Name"
-site_url: "https://your-username.github.io/your-github-repo/"
-repo_url: "https://github.com/your-username/your-github-repo"
-repo_name: "your-github-repo"
+site_name: "Warp tutorial"
+site_url: "https://massimim.github.io/warp-tutorial/"
+repo_url: "https://github.com/massimim/warp-tutorial"
+repo_name: "warp-tutorial"
 
 theme:
   name: material
@@ -11,9 +11,19 @@ theme:
     - toc.follow
     - search.highlight
     - content.tabs.link
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: light-blue
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: light-blue
 nav:
   - Home: index.md
-  #- Guide: guide.md
+#   #- Home: index.md
+#   #- Guide: guide.md
 
 markdown_extensions:
   - admonition
@@ -21,6 +31,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight
   - pymdownx.extra
+  - tables # Enables standard Markdown tables
+  #- pymdownx.tabular # Enables advanced tables -> pip install pymdown-extensions
+  - pymdownx.superfences # Required for some advanced formatting
   - pymdownx.tabbed:
       alternate_style: true
 

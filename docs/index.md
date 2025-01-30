@@ -8,26 +8,59 @@ NVIDIA Warp introduces a new solution: a Python multi-GPU programming model with
 
 In this tutorial, we will introduce the Warp multi-GPU programming model and demonstrate how to write high-performance, multi-GPU applications in Python. Beginning with simple Warp kernel development and profiling, we will progress to more advanced features such as automatic differentiability and multi-GPU programming.
 
-
-
 ## Schedule
+
+The tutorial will be divided into two sections, each one starting with a general introduction to Warp and then focusing on different aspects of the programming model.  The following is a tentative schedule for the tutorial that is subject to change. Please check the tutorial website for the most up-to-date information closer to the tutorial date.
 
 ### Day One
 
-| Time          | Description                         | Status   |
-|---------------|-------------------------------------|----------|
-| Documentation | Provides detailed instructions     | ✅ Done   |
-| Tutorials     | Step-by-step usage guides          | 🚧 WIP    |
-| Support       | Community and professional support | ❌ Not yet |
+| Duration  | Title                                          | Topics |
+|-----------|-----------------------------------------------|       |
+| **1h**    | Introduction to GPU programming in Warp | GPU architectures and Warp programming model|
+|           | | Managing GPU-CPU data movement           |
+|           | | Warp data types and kernel launches      |
+| **1.5h**  | Optimization of Stencil computations on a single GPU |A simple 2D CFD based on LBM|
+|           || Profiling Warp and comparison with plain CUDA apps |
+|           || Optimizations with `wp.static`          |
+| **1.5h**  | Stencil on multi-GPU                   |Managing multiple devices in Warp|
+|           || Porting the simple CFD app to multi-GPU with 1D partitioning  |
+|           || Overlapping computation and data transfer |
 
 ### Day Two
 
-| Time          | Description                        | Status    |
-|---------------|------------------------------------|-----------|
-| Documentation | Provides detailed instructions     | ✅ Done   |
-| Tutorials     | Step-by-step usage guides          | 🚧 WIP    |
-| Support       | Community and professional support | ❌ Not yet |
+| Duration  | Title                                         | Topics |
+|-----------|-----------------------------------------------|---------|
+| **1h**    | Introduction to GPU programming in Warp   | GPU architectures and Warp programming model|
+|           || Managing GPU-CPU data movement           |
+|           || Warp data types and kernel launches      |
+| **1.5h**  | Optimization of Stencil computations on a single GPU |Implementing a simple 2D CFD based on LBM|
+|           || Profiling Warp and comparison with plain CUDA apps |
+|           || Optimizations with `wp.static`          |
+| **1.5h**  | Stencil with out-of-core execution       |Unified memory and NVIDIA Grace systems |
+|           || Out-of-core capabilities for our CFD app |
+|           || Overlapping computation and data transfer |
 
-## Reading list
 
-## Tutorial setup
+## Prerequisites
+
+The tutorial is designed for developers with a basic understanding of Python.
+Participants should have some experience in writing and executing Python code. Familiarity with GPU architectures or CUDA is beneficial but not required.
+
+<!--
+```hidden
+## Reading List
+To be provided.
+```
+-->
+
+## Tutorial Setup
+
+Attendees are required to have a laptop with a working Python environment and Nsight Systems installed. Attendees will be provided with credentials to log into an HPC cluster with NVIDIA GPUs.
+
+### Installing Nsight Systems
+
+Instructions to install Nsight Systems can be found [here](https://developer.nvidia.com/nsight-systems).
+
+### How to Access the Cluster
+
+More detailed information will be provided closer to the tutorial date.
