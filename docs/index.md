@@ -17,26 +17,26 @@ The tutorial will be divided into two sections, each one starting with a general
 | Duration  | Title                                          | Topics |
 |-----------|-----------------------------------------------|       |
 | **1h**    | Introduction to GPU programming in Warp | GPU architectures and Warp programming model|
-|           | | Managing GPU-CPU data movement           |
 |           | | Warp data types and kernel launches      |
-| **1.5h**  | Optimization of Stencil computations on a single GPU |A simple 2D CFD based on LBM|
+|           | | Synchronization and GPU-CPU data movement           |
+| **1.5h**  | Computational fluid dynamics with Warp and XLB |A simple 2D CFD based on LBM|
 |           || Profiling Warp and comparison with plain CUDA apps |
-|           || Optimizations with `wp.static`          |
-| **1.5h**  | Stencil on multi-GPU                   |Managing multiple devices in Warp|
+|           || Optimizations          |
+| **1.5h**  | Multi-GPU fluid dynamics simulation        |Managing multiple devices in Warp|
 |           || Porting the simple CFD app to multi-GPU with 1D partitioning  |
 |           || Overlapping computation and data transfer |
 
 ### Day Two
 
-| Duration  | Title                                         | Topics |
-|-----------|-----------------------------------------------|---------|
-| **1h**    | Introduction to GPU programming in Warp   | GPU architectures and Warp programming model|
-|           || Managing GPU-CPU data movement           |
-|           || Warp data types and kernel launches      |
-| **1.5h**  | Optimization of Stencil computations on a single GPU |Implementing a simple 2D CFD based on LBM|
+| Duration  | Title                                          | Topics |
+|-----------|-----------------------------------------------|       |
+| **1h**    | Introduction to GPU programming in Warp | GPU architectures and Warp programming model|
+|           | | Warp data types and kernel launches      |
+|           | | Synchronization and GPU-CPU data movement           |
+| **1.5h**  | Computational fluid dynamics with Warp and XLB |A simple 2D CFD based on LBM|
 |           || Profiling Warp and comparison with plain CUDA apps |
-|           || Optimizations with `wp.static`          |
-| **1.5h**  | Stencil with out-of-core execution       |Unified memory and NVIDIA Grace systems |
+|           || Optimizations           |
+| **1.5h**  | Out-of-core fluid dynamics simulation       |Unified memory and NVIDIA Grace systems |
 |           || Out-of-core capabilities for our CFD app |
 |           || Overlapping computation and data transfer |
 
